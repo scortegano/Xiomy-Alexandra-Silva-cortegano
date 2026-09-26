@@ -1,0 +1,306 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body {
+	margin: 0;
+	background-color: #E9F0FA;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+ 
+.titulo-catalogo {
+	text-align: center;
+	color: #111111;
+	padding-top: 20px;
+}
+ 
+/* ---------- Grid de productos ---------- */
+.grid-productos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+ 
+.img-container {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 10px;
+	width: 220px;
+	text-align: center;
+	text-decoration: none;
+	color: #333333;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+}
+ 
+.img-container:hover {
+	transform: translateY(-4px);
+}
+ 
+.img-container img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+ 
+.img-container p {
+	margin: 8px 0 0;
+	font-size: 14px;
+}
+ 
+.pie-catalogo {
+	background-color: #000000;
+	color: #FFFFFF;
+	padding: 20px;
+	text-align: center;
+	font-size: 13px;
+	margin-top: auto;
+}
+ 
+.grid-productos {
+	flex: 1;
+}
+ 
+/* ---------- Página de detalle ---------- */
+.volver {
+	display: inline-block;
+	margin: 20px;
+	color: #111111;
+	text-decoration: none;
+	font-weight: bold;
+}
+ 
+.aviso-inicial {
+	text-align: center;
+	color: #777777;
+	margin-top: 60px;
+}
+ 
+/* Cada ficha está oculta por defecto... */
+.producto {
+	display: none;
+}
+ 
+/* ...y solo aparece cuando su id coincide con el enlace clickeado (#apple, #garmin, etc.) */
+.producto:target {
+	display: block;
+	flex: 1;
+}
+ 
+.aviso-inicial {
+	flex: 1;
+}
+ 
+.detalle-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 30px;
+}
+ 
+.imagen-principal img {
+	width: 320px;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Miniaturas de ángulos adicionales ---------- */
+.miniaturas {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 12px;
+}
+
+.miniaturas img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	border: 2px solid #FFFFFF;
+}
+ 
+.detalle-form {
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 320px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.detalle-form h2 {
+	margin: 0 0 4px;
+}
+ 
+.precio {
+	font-size: 20px;
+	font-weight: bold;
+	color: #111111;
+	margin: 0 0 10px;
+}
+ 
+.detalle-form select,
+.detalle-form input {
+	padding: 8px;
+	border-radius: 6px;
+	border: 1px solid #CCCCCC;
+}
+ 
+.btn-comprar {
+	background-color: #111111;
+	color: #FFFFFF;
+	padding: 10px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 15px;
+	margin-top: 6px;
+}
+ 
+.btn-comprar:hover {
+	background-color: #333333;
+}
+.img-container {
+    width: 18.5%;
+    display: inline-block; 
+    vertical-align: top;
+    margin: 10px;
+}
+
+
+/* ---------- Galería intercambiable (clic en miniatura = pasa a grande) ---------- */
+.selector-imagen {
+	display: none;
+}
+
+.imagen-principal .foto-grande {
+	display: none;
+}
+
+.mini-slot {
+	cursor: pointer;
+	display: block;
+}
+
+.mini-slot img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	border: 2px solid #FFFFFF;
+	display: block;
+}
+
+/* apple */
+#apple-sel1:checked ~ .imagen-principal .f1 {
+	display: block;
+}
+
+#apple-sel1:checked ~ .imagen-principal .miniaturas .m1 {
+	display: none;
+}
+
+#apple-sel2:checked ~ .imagen-principal .f2 {
+	display: block;
+}
+
+#apple-sel2:checked ~ .imagen-principal .miniaturas .m2 {
+	display: none;
+}
+
+#apple-sel3:checked ~ .imagen-principal .f3 {
+	display: block;
+}
+
+#apple-sel3:checked ~ .imagen-principal .miniaturas .m3 {
+	display: none;
+}
+
+#apple-sel4:checked ~ .imagen-principal .f4 {
+	display: block;
+}
+
+#apple-sel4:checked ~ .imagen-principal .miniaturas .m4 {
+	display: none;
+}
+
+/* garmin */
+#garmin-sel1:checked ~ .imagen-principal .f1 {
+	display: block;
+}
+
+#garmin-sel1:checked ~ .imagen-principal .miniaturas .m1 {
+	display: none;
+}
+
+#garmin-sel2:checked ~ .imagen-principal .f2 {
+	display: block;
+}
+
+#garmin-sel2:checked ~ .imagen-principal .miniaturas .m2 {
+	display: none;
+}
+
+#garmin-sel3:checked ~ .imagen-principal .f3 {
+	display: block;
+}
+
+#garmin-sel3:checked ~ .imagen-principal .miniaturas .m3 {
+	display: none;
+}
+
+#garmin-sel4:checked ~ .imagen-principal .f4 {
+	display: block;
+}
+
+#garmin-sel4:checked ~ .imagen-principal .miniaturas .m4 {
+	display: none;
+}
+
+/* huawei */
+#huawei-sel1:checked ~ .imagen-principal .f1 {
+	display: block;
+}
+
+#huawei-sel1:checked ~ .imagen-principal .miniaturas .m1 {
+	display: none;
+}
+
+#huawei-sel2:checked ~ .imagen-principal .f2 {
+	display: block;
+}
+
+#huawei-sel2:checked ~ .imagen-principal .miniaturas .m2 {
+	display: none;
+}
+
+#huawei-sel3:checked ~ .imagen-principal .f3 {
+	display: block;
+}
+
+#huawei-sel3:checked ~ .imagen-principal .miniaturas .m3 {
+	display: none;
+}
+
+#huawei-sel4:checked ~ .imagen-principal .f4 {
+	display: block;
+}
+
+#huawei-sel4:checked ~ .imagen-principal .miniaturas .m4 {
+	display: none;
+}
+

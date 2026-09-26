@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Detalle del producto</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+ 
+	<a href="catalogo.html" class="volver">&larr; Volver al catálogo</a>
+ 
+	<section id="apple" class="producto">
+		<div class="detalle-container">
+	<input type="radio" id="apple-sel1" name="apple-sel" class="selector-imagen" checked>
+	<input type="radio" id="apple-sel2" name="apple-sel" class="selector-imagen">
+	<input type="radio" id="apple-sel3" name="apple-sel" class="selector-imagen">
+	<input type="radio" id="apple-sel4" name="apple-sel" class="selector-imagen">
+			<div class="imagen-principal">
+				<img class="foto-grande f1" src="apple-watch-series10.jpg" alt="Apple Watch Series 10">
+				<img class="foto-grande f2" src="reloj1delado.jpg" alt="Apple Watch Series 10 - vista lateral">
+				<img class="foto-grande f3" src="reloj1delado2.jpg" alt="Apple Watch Series 10 - otro ángulo">
+				<img class="foto-grande f4" src="reloj1delado3.jpg" alt="Apple Watch Series 10 - otro ángulo">
+				<div class="miniaturas">
+					<label class="mini-slot m1" for="apple-sel1"><img src="apple-watch-series10.jpg" alt="Apple Watch Series 10"></label>
+					<label class="mini-slot m2" for="apple-sel2"><img src="reloj1delado.jpg" alt="Apple Watch Series 10 - vista lateral"></label>
+					<label class="mini-slot m3" for="apple-sel3"><img src="reloj1delado2.jpg" alt="Apple Watch Series 10 - otro ángulo"></label>
+					<label class="mini-slot m4" for="apple-sel4"><img src="reloj1delado3.jpg" alt="Apple Watch Series 10 - otro ángulo"></label>
+				</div>
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Apple Watch Series 10</h2>
+				<p class="precio">S/ 1899.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="garmin" class="producto">
+		<div class="detalle-container">
+	<input type="radio" id="garmin-sel1" name="garmin-sel" class="selector-imagen" checked>
+	<input type="radio" id="garmin-sel2" name="garmin-sel" class="selector-imagen">
+	<input type="radio" id="garmin-sel3" name="garmin-sel" class="selector-imagen">
+	<input type="radio" id="garmin-sel4" name="garmin-sel" class="selector-imagen">
+			<div class="imagen-principal">
+				<img class="foto-grande f1" src="garmin-forerunner265.jpg" alt="Garmin Forerunner 265">
+				<img class="foto-grande f2" src="reloj2delado.jpg" alt="Garmin Forerunner 265 - con su caja">
+				<img class="foto-grande f3" src="reloj2delado2.jpg" alt="Garmin Forerunner 265 - otro ángulo">
+				<img class="foto-grande f4" src="reloj2delado3.jpg" alt="Garmin Forerunner 265 - otro ángulo">
+				<div class="miniaturas">
+					<label class="mini-slot m1" for="garmin-sel1"><img src="garmin-forerunner265.jpg" alt="Garmin Forerunner 265"></label>
+					<label class="mini-slot m2" for="garmin-sel2"><img src="reloj2delado.jpg" alt="Garmin Forerunner 265 - con su caja"></label>
+					<label class="mini-slot m3" for="garmin-sel3"><img src="reloj2delado2.jpg" alt="Garmin Forerunner 265 - otro ángulo"></label>
+					<label class="mini-slot m4" for="garmin-sel4"><img src="reloj2delado3.jpg" alt="Garmin Forerunner 265 - otro ángulo"></label>
+				</div>
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Garmin Forerunner 265</h2>
+				<p class="precio">S/ 1590.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="huawei" class="producto">
+		<div class="detalle-container">
+	<input type="radio" id="huawei-sel1" name="huawei-sel" class="selector-imagen" checked>
+	<input type="radio" id="huawei-sel2" name="huawei-sel" class="selector-imagen">
+	<input type="radio" id="huawei-sel3" name="huawei-sel" class="selector-imagen">
+	<input type="radio" id="huawei-sel4" name="huawei-sel" class="selector-imagen">
+			<div class="imagen-principal">
+				<img class="foto-grande f1" src="huawei-watch-gt5.jpg" alt="Huawei Watch GT 5">
+				<img class="foto-grande f2" src="reloj3delado.jpg" alt="Huawei Watch GT 5 - con su caja">
+				<img class="foto-grande f3" src="reloj3delado2.jpg" alt="Huawei Watch GT 5 - otro ángulo">
+				<img class="foto-grande f4" src="reloj3delado3.jpg" alt="Huawei Watch GT 5 - otro ángulo">
+				<div class="miniaturas">
+					<label class="mini-slot m1" for="huawei-sel1"><img src="huawei-watch-gt5.jpg" alt="Huawei Watch GT 5"></label>
+					<label class="mini-slot m2" for="huawei-sel2"><img src="reloj3delado.jpg" alt="Huawei Watch GT 5 - con su caja"></label>
+					<label class="mini-slot m3" for="huawei-sel3"><img src="reloj3delado2.jpg" alt="Huawei Watch GT 5 - otro ángulo"></label>
+					<label class="mini-slot m4" for="huawei-sel4"><img src="reloj3delado3.jpg" alt="Huawei Watch GT 5 - otro ángulo"></label>
+				</div>
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Huawei Watch GT 5</h2>
+				<p class="precio">S/ 899.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="fossil" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="fossil-gen6.jpg" alt="Fossil Gen 6">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Fossil Gen 6</h2>
+				<p class="precio">S/ 1150.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="instinct" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="garmin-instinct2x.jpg" alt="Garmin Instinct 2X">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Garmin Instinct 2X</h2>
+				<p class="precio">S/ 1390.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="trex" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="amazfit-trex-ultra.jpg" alt="Amazfit T-Rex Ultra">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Amazfit T-Rex Ultra</h2>
+				<p class="precio">S/ 690.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="xiaomi" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="xiaomi-mi-watch.jpg" alt="Xiaomi Mi Watch">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Xiaomi Mi Watch</h2>
+				<p class="precio">S/ 490.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="samsung" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="samsung-galaxy-watch7.jpg" alt="Samsung Galaxy Watch 7">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Samsung Galaxy Watch 7</h2>
+				<p class="precio">S/ 1290.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+ 
+	<section id="polar" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="polar-vantage-v3.jpg" alt="Polar Vantage V3">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>Polar Vantage V3</h2>
+				<p class="precio">S/ 1690.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="t900" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images.jpg" alt="T900 ultra big 2.09">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>T900 ultra big 2.09</h2>
+				<p class="precio">S/ 1520.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+	<section id="deluxe-u13" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (1).jpg" alt="smartwatches deluxe-u13">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>smartwatches deluxe-u13</h2>
+				<p class="precio">S/ 1200.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+		<section id="apple-watch" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (2).jpg" alt="apple-watch">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>apple-watch</h2>
+				<p class="precio">S/ 1400.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="gt4-pro-max" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (3).jpg" alt="gt4-pro-max">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>gt4-pro-max</h2>
+				<p class="precio">S/ 1100.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="d20-ip67" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (4).jpg" alt="smartwatches d20-ip67">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>smartwatches d20-ip67</h2>
+				<p class="precio">S/ 1250.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="zylo-flux-rosa" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (5).jpg" alt="smartwatches zylo-flux-rosa">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>smartwatches zylo-flux-rosa</h2>
+				<p class="precio">S/ 1340.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="t500-health" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (6).jpg" alt="smartwatches t500+pro">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>smartwatches t500+pro</h2>
+				<p class="precio">S/ 1140.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="pixbee-kids" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (8).jpg" alt="smartwatches kids pixbee fit gen 2">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>smartwatches kids pixbee fit gen 2</h2>
+				<p class="precio">S/ 1020.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="galaxy-watch4" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images (9).jpg" alt="wearable app for smartwatches">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>wearable app for smartwatches</h2>
+				<p class="precio">S/ 3000.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="fenix8" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images(10).jpg" alt="garmin fenix 8">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>garmin fenix 8</h2>
+				<p class="precio">S/ 3100.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+
+			<section id="earbuds-201" class="producto">
+		<div class="detalle-container">
+			<div class="imagen-principal">
+				<img src="images(11).jpg" alt="smartwatches">
+			</div>
+			<form action="boleta.html" class="detalle-form">
+				<h2>smartwatches</h2>
+				<p class="precio">S/ 100.00</p>
+ 
+				<label>Tamaño de caja</label>
+				<select name="tamano" required>
+					<option value="">Selecciona un tamaño</option>
+					<option value="40mm">40 mm</option>
+					<option value="42mm">42 mm</option>
+					<option value="44mm">44 mm</option>
+					<option value="46mm">46 mm</option>
+				</select>
+ 
+				<label>Color</label>
+				<select name="color" required>
+					<option value="">Selecciona un color</option>
+					<option value="Negro">Negro</option>
+					<option value="Plateado">Plateado</option>
+					<option value="Azul">Azul</option>
+				</select>
+ 
+				<label>Dirección de envío</label>
+				<input type="text" name="direccion" placeholder="Ingresa tu dirección" required>
+ 
+				<button type="submit" class="btn-comprar">Realizar compra</button>
+			</form>
+		</div>
+	</section>
+	
+	
+
+ 
+	<p class="aviso-inicial">Haz clic en un producto del catálogo para ver su ficha aquí.</p>
+ 
+	<div class="pie-catalogo">
+		¡Gracias por visitar nuestro catálogo de smartwatches!<br>
+		Este es un proyecto personal, elaborado con fines educativos.
+	</div>
+ 
+</body>
+</html>
